@@ -80,6 +80,7 @@ import { warezcdnembedHlsScraper } from './embeds/warezcdn/hls';
 import { warezcdnembedMp4Scraper } from './embeds/warezcdn/mp4';
 import { warezPlayerScraper } from './embeds/warezcdn/warezplayer';
 import { webtor1080Scraper, webtor480Scraper, webtor4kScraper, webtor720Scraper } from './embeds/webtor';
+import { amznScraper, ntflxScraper } from './embeds/whvxmirrors';
 import { wootlyScraper } from './embeds/wootly';
 import { embedsuScraper } from './sources/embedsu';
 import { FedAPIScraper } from './sources/fedapi';
@@ -96,6 +97,7 @@ import { vidlinkScraper } from './sources/vidlink';
 import { vidSrcToScraper } from './sources/vidsrcto';
 import { warezcdnScraper } from './sources/warezcdn';
 import { webtorScraper } from './sources/webtor';
+import { mirrorsScraper } from './sources/whvxmirrors';
 
 export function gatherAllSources(): Array<Sourcerer> {
   // all sources are gathered here
@@ -136,6 +138,7 @@ export function gatherAllSources(): Array<Sourcerer> {
     embedsuScraper,
     vidlinkScraper,
     FedAPIScraper,
+    mirrorsScraper,
   ];
 }
 
@@ -205,5 +208,7 @@ export function gatherAllEmbeds(): Array<Embed> {
     webtor720Scraper,
     webtor480Scraper,
     viperScraper,
+    amznScraper,
+    ntflxScraper,
   ];
 }
